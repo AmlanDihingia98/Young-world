@@ -68,7 +68,7 @@ export default function NewsletterForm() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="flex-shrink-0 bg-primary hover:bg-primary/90 text-black text-sm font-bold py-3 px-6 rounded-full uppercase tracking-widest transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 mr-1"
+                        className="flex-shrink-0 bg-[var(--color-button)] hover:scale-105 text-white text-sm font-bold py-3 px-6 rounded-full uppercase tracking-widest transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 mr-1"
                     >
                         {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Join'}
                         {!loading && <ArrowRight className="w-4 h-4" />}

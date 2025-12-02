@@ -53,7 +53,7 @@ export default function Navbar() {
                                 <Link
                                     key={item}
                                     href="#"
-                                    className="text-sm font-bold uppercase tracking-widest text-white/60 hover:text-primary transition-colors relative group"
+                                    className="text-sm font-bold uppercase tracking-widest text-primary hover:text-white transition-colors relative group"
                                 >
                                     {item}
                                     <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary transition-all group-hover:w-full" />
@@ -64,13 +64,13 @@ export default function Navbar() {
                         <div className="hidden md:flex items-center gap-4">
                             <Link
                                 href="/login"
-                                className="text-white hover:text-primary transition-colors text-sm font-bold uppercase tracking-wide"
+                                className="text-primary hover:text-white transition-colors text-sm font-bold uppercase tracking-wide"
                             >
                                 Login
                             </Link>
                             <Link
                                 href="/login?mode=signup"
-                                className="bg-white text-black hover:bg-gradient-to-r hover:from-primary hover:via-white hover:to-secondary hover:scale-105 transition-all duration-300 px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_20px_rgba(204,255,0,0.4)]"
+                                className="bg-[var(--color-button)] text-white hover:scale-105 transition-transform duration-300 px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wide shadow-[0_0_20px_rgba(253,7,4,0.2)]"
                             >
                                 Sign Up
                             </Link>
@@ -108,7 +108,7 @@ export default function Navbar() {
                                     key={item}
                                     href="#"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="text-3xl font-display font-black uppercase text-white hover:text-primary transition-colors"
+                                    className="text-3xl font-display font-black uppercase text-primary hover:text-white transition-colors"
                                 >
                                     {item}
                                 </Link>
@@ -117,14 +117,14 @@ export default function Navbar() {
                                 <Link
                                     href="/login"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="w-full border border-white/20 text-white py-3 rounded-full text-lg font-bold uppercase tracking-wide hover:border-primary hover:text-primary transition-colors"
+                                    className="w-full border border-primary/20 text-primary py-3 rounded-full text-lg font-bold uppercase tracking-wide hover:border-white hover:text-white transition-colors"
                                 >
                                     Login
                                 </Link>
                                 <Link
                                     href="/login?mode=signup"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="w-full bg-primary text-black py-3 rounded-full text-lg font-bold uppercase tracking-wide hover:bg-primary/90 transition-colors"
+                                    className="w-full bg-[var(--color-button)] text-white py-3 rounded-full text-lg font-bold uppercase tracking-wide hover:scale-105 transition-transform"
                                 >
                                     Sign Up
                                 </Link>

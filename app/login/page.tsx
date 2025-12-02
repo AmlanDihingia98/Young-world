@@ -35,10 +35,10 @@ export default function LoginPage({
                             />
                         </div>
                     </Link>
-                    <h2 className="text-3xl font-display font-black tracking-tighter uppercase text-white mb-2">
+                    <h1 className="text-4xl font-black uppercase tracking-tighter text-primary mb-2">
                         {isLogin ? 'Welcome Back' : 'Join the Movement'}
-                    </h2>
-                    <p className="text-white/40 text-sm font-medium uppercase tracking-wide">
+                    </h1>
+                    <p className="text-primary/60 text-sm font-bold tracking-widest uppercase">
                         {isLogin ? 'Enter your credentials to access your account' : 'Create your creator profile today'}
                     </p>
                 </div>
@@ -53,7 +53,7 @@ export default function LoginPage({
                                 className="space-y-4 overflow-hidden"
                             >
                                 <div>
-                                    <label htmlFor="full_name" className="block text-xs font-bold uppercase tracking-widest text-white/60 mb-2">
+                                    <label htmlFor="full_name" className="block text-xs font-bold uppercase tracking-widest text-primary/60 mb-2">
                                         Full Name
                                     </label>
                                     <input
@@ -61,12 +61,12 @@ export default function LoginPage({
                                         name="full_name"
                                         type="text"
                                         required={!isLogin}
-                                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-[var(--primary)] transition-colors font-bold"
+                                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-primary placeholder-primary/20 focus:outline-none focus:border-[var(--primary)] transition-colors font-bold"
                                         placeholder="YOUR NAME"
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="country" className="block text-xs font-bold uppercase tracking-widest text-white/60 mb-2">
+                                    <label htmlFor="country" className="block text-xs font-bold uppercase tracking-widest text-primary/60 mb-2">
                                         Country
                                     </label>
                                     <input
@@ -74,12 +74,12 @@ export default function LoginPage({
                                         name="country"
                                         type="text"
                                         required={!isLogin}
-                                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-[var(--primary)] transition-colors font-bold"
+                                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-primary placeholder-primary/20 focus:outline-none focus:border-[var(--primary)] transition-colors font-bold"
                                         placeholder="YOUR COUNTRY"
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="social_url" className="block text-xs font-bold uppercase tracking-widest text-white/60 mb-2">
+                                    <label htmlFor="social_url" className="block text-xs font-bold uppercase tracking-widest text-primary/60 mb-2">
                                         Social Profile URL
                                     </label>
                                     <input
@@ -87,7 +87,7 @@ export default function LoginPage({
                                         name="social_url"
                                         type="url"
                                         required={!isLogin}
-                                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-[var(--primary)] transition-colors font-bold"
+                                        className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-primary placeholder-primary/20 focus:outline-none focus:border-[var(--primary)] transition-colors font-bold"
                                         placeholder="HTTPS://TIKTOK.COM/@YOU"
                                     />
                                 </div>
@@ -96,7 +96,7 @@ export default function LoginPage({
                     </AnimatePresence>
 
                     <div>
-                        <label htmlFor="email" className="block text-xs font-bold uppercase tracking-widest text-white/60 mb-2">
+                        <label htmlFor="email" className="block text-xs font-bold uppercase tracking-widest text-primary/60 mb-2">
                             Email
                         </label>
                         <input
@@ -110,7 +110,7 @@ export default function LoginPage({
                     </div>
 
                     <div>
-                        <label htmlFor="password" className="block text-xs font-bold uppercase tracking-widest text-white/60 mb-2">
+                        <label htmlFor="password" className="block text-xs font-bold uppercase tracking-widest text-primary/60 mb-2">
                             Password
                         </label>
                         <input
@@ -137,7 +137,7 @@ export default function LoginPage({
                     <div className="pt-4">
                         <button
                             formAction={isLogin ? login : signup}
-                            className="w-full bg-transparent border border-white/20 text-white hover:bg-[var(--primary)] hover:text-white hover:border-transparent hover:scale-[1.02] active:scale-[0.98] transition-all py-4 rounded-xl text-sm font-black uppercase tracking-widest shadow-lg hover:shadow-[0_0_20px_rgba(204,255,0,0.4)]"
+                            className="w-full bg-[var(--color-button)] text-white hover:scale-[1.02] active:scale-[0.98] transition-all py-4 rounded-xl text-sm font-black uppercase tracking-widest shadow-[0_0_20px_rgba(253,7,4,0.3)] hover:shadow-[0_0_30px_rgba(253,7,4,0.5)]"
                         >
                             {isLogin ? 'Log in' : 'Create Account'}
                         </button>
@@ -147,7 +147,7 @@ export default function LoginPage({
                         <button
                             type="button"
                             onClick={() => setIsLogin(!isLogin)}
-                            className="text-white/40 hover:text-white text-xs font-bold uppercase tracking-widest transition-colors"
+                            className="text-primary/60 hover:text-primary text-xs font-bold uppercase tracking-widest transition-colors"
                         >
                             {isLogin ? "Don't have an account? Sign up" : "Already have an account? Log in"}
                         </button>
