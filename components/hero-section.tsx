@@ -65,7 +65,7 @@ export default function HeroSection() {
                     className="mb-12"
                 >
                     <Link
-                        href="/login?mode=signup"
+                        href="/challenge"
                         className="inline-block bg-[var(--color-button)] text-white px-8 py-4 rounded-full text-lg font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(253,7,4,0.3)]"
                     >
                         Join the Heat Check Challenge

@@ -49,13 +49,17 @@ export default function Navbar() {
                         </Link>
 
                         <div className="hidden md:flex items-center space-x-8">
-                            {['Home', 'Leaderboard', 'Heat Check Challenge'].map((item) => (
+                            {[
+                                { name: 'Home', href: '/' },
+                                { name: 'Leaderboard', href: '#' },
+                                { name: 'Heat Check Challenge', href: '/challenge' }
+                            ].map((item) => (
                                 <Link
-                                    key={item}
-                                    href="#"
+                                    key={item.name}
+                                    href={item.href}
                                     className="text-sm font-bold uppercase tracking-widest text-primary hover:text-white transition-colors relative group"
                                 >
-                                    {item}
+                                    {item.name}
                                     <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary transition-all group-hover:w-full" />
                                 </Link>
                             ))}
@@ -103,14 +107,18 @@ export default function Navbar() {
                         </button>
 
                         <div className="flex flex-col gap-8 text-center">
-                            {['Home', 'Leaderboard', 'Heat Check Challenge'].map((item) => (
+                            {[
+                                { name: 'Home', href: '/' },
+                                { name: 'Leaderboard', href: '#' },
+                                { name: 'Heat Check Challenge', href: '/challenge' }
+                            ].map((item) => (
                                 <Link
-                                    key={item}
-                                    href="#"
+                                    key={item.name}
+                                    href={item.href}
                                     onClick={() => setMobileMenuOpen(false)}
                                     className="text-3xl font-display font-black uppercase text-primary hover:text-white transition-colors"
                                 >
-                                    {item}
+                                    {item.name}
                                 </Link>
                             ))}
                             <div className="flex flex-col gap-4 w-full px-8 mt-8">
