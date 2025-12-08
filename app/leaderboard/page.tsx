@@ -4,6 +4,8 @@ import GrainOverlay from '@/components/grain-overlay'
 import { fetchLeaderboardData } from '@/utils/google-sheets'
 import { Trophy, Medal, Crown } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 export default async function LeaderboardPage() {
     const leaderboard = await fetchLeaderboardData()
 
