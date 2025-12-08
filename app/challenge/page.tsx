@@ -6,6 +6,7 @@ import GrainOverlay from '@/components/grain-overlay'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import RazorpayButton from '@/components/razorpay-button'
 import { Check, Globe, Music, Smartphone, Trophy } from 'lucide-react'
 import HowItWorks from '@/components/how-it-works'
 
@@ -34,12 +35,9 @@ export default function ChallengePage() {
                         <p className="text-xl text-primary/80 font-medium leading-relaxed mb-8 max-w-xl">
                             A global $1 creator challenge where one reel can change everything. Get the official track, create your version, and climb the global leaderboard. Life-changing prizes — from all-paid creator trips to next-gen iPhones and mentorships. Your phone is the stage. Your moment starts now.
                         </p>
-                        <Link
-                            href="/login?mode=signup"
-                            className="inline-block bg-[var(--color-button)] text-white px-8 py-4 rounded-full text-lg font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(253,7,4,0.3)]"
-                        >
-                            Join for $1
-                        </Link>
+                        <div className="mt-8">
+                            <RazorpayButton />
+                        </div>
                     </motion.div>
 
                     <motion.div
@@ -102,12 +100,7 @@ export default function ChallengePage() {
                             </div>
                             <div className="mt-12">
                                 <p className="text-2xl font-black uppercase text-primary mb-8">#HEATCHECKCHALLENGE</p>
-                                <Link
-                                    href="/login?mode=signup"
-                                    className="inline-block bg-[var(--color-button)] text-white px-12 py-5 rounded-full text-xl font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(253,7,4,0.3)]"
-                                >
-                                    Start Your Journey
-                                </Link>
+                                <RazorpayButton />
                             </div>
                         </motion.div>
 

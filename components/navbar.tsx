@@ -51,7 +51,7 @@ export default function Navbar() {
                         <div className="hidden md:flex items-center space-x-8">
                             {[
                                 { name: 'Home', href: '/' },
-                                { name: 'Leaderboard', href: '#' },
+                                { name: 'Leaderboard', href: '/leaderboard' },
                                 { name: 'Heat Check Challenge', href: '/challenge' }
                             ].map((item) => (
                                 <Link
@@ -109,7 +109,7 @@ export default function Navbar() {
                         <div className="flex flex-col gap-8 text-center">
                             {[
                                 { name: 'Home', href: '/' },
-                                { name: 'Leaderboard', href: '#' },
+                                { name: 'Leaderboard', href: '/leaderboard' },
                                 { name: 'Heat Check Challenge', href: '/challenge' }
                             ].map((item) => (
                                 <Link
