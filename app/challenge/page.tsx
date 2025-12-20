@@ -6,7 +6,7 @@ import GrainOverlay from '@/components/grain-overlay'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import RazorpayButton from '@/components/razorpay-button'
+import PaypalButton from '@/components/paypal-button'
 import { Check, Globe, Music, Smartphone, Trophy } from 'lucide-react'
 import HowItWorks from '@/components/how-it-works'
 
@@ -36,7 +36,7 @@ export default function ChallengePage() {
                             A global $1 creator challenge where one reel can change everything. Get the official track, create your version, and climb the global leaderboard. Life-changing prizes — from all-paid creator trips to next-gen iPhones and mentorships. Your phone is the stage. Your moment starts now.
                         </p>
                         <div className="mt-8">
-                            <RazorpayButton />
+                            <PaypalButton />
                         </div>
                     </motion.div>
 
@@ -100,7 +100,7 @@ export default function ChallengePage() {
                             </div>
                             <div className="mt-12">
                                 <p className="text-2xl font-black uppercase text-primary mb-8">#HEATCHECKCHALLENGE</p>
-                                <RazorpayButton />
+                                <PaypalButton />
                             </div>
                         </motion.div>
 
