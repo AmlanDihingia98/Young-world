@@ -5,7 +5,7 @@ import NewsletterForm from '@/components/newsletter-form'
 
 export default function NewsletterSection() {
     return (
-        <section className="w-full px-4 sm:px-6 lg:px-8 pb-24 relative z-10">
+        <section id="waitlist" className="w-full px-4 sm:px-6 lg:px-8 pb-24 relative z-10">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

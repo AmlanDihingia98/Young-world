@@ -34,7 +34,7 @@ export default function HeroSection() {
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8"
                 >
                     <span className="w-2 h-2 rounded-full bg-secondary animate-pulse shadow-[0_0_10px_var(--color-secondary)]" />
-                    <span className="text-xs font-bold uppercase tracking-widest text-primary">Season 1 Upcoming</span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-primary">Season 1 Coming Soon</span>
                 </motion.div>
 
                 <motion.h1
@@ -62,13 +62,19 @@ export default function HeroSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className="mb-12"
+                    className="mb-12 flex flex-col sm:flex-row gap-4 justify-center items-center"
                 >
-                    <Link
-                        href="/challenge"
-                        className="inline-block bg-[var(--color-button)] text-white px-8 py-4 rounded-full text-lg font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(253,7,4,0.3)]"
+                    <button
+                        disabled
+                        className="inline-block bg-[var(--color-button)] text-white px-8 py-4 rounded-full text-lg font-black uppercase tracking-widest opacity-50 cursor-not-allowed min-w-[300px]"
                     >
-                        Join the Heat Check Challenge
+                        Join the Heat Check
+                    </button>
+                    <Link
+                        href="#waitlist"
+                        className="inline-block bg-[var(--color-button)] text-white px-8 py-4 rounded-full text-lg font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_30px_rgba(253,7,4,0.3)] min-w-[300px]"
+                    >
+                        Join the Waitlist
                     </Link>
                 </motion.div>
             </div>
