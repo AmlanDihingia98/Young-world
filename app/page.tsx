@@ -28,19 +28,19 @@ export default function WaveTheWhite() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 container flex flex-col items-center justify-center text-center px-4 md:px-6 pt-20 pb-12">
+        <div className="relative z-10 container flex flex-col items-center justify-center text-center px-4 sm:px-6 pt-20 pb-12 w-full max-w-7xl mx-auto">
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase mb-4 text-white">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase mb-3 sm:mb-4 text-white drop-shadow-md">
             Wave the White
           </h1>
 
-          <h2 className="text-xl md:text-3xl font-medium mb-6 max-w-2xl text-neutral-200">
+          <h2 className="text-lg sm:text-xl md:text-3xl font-medium mb-4 sm:mb-6 max-w-full sm:max-w-2xl text-neutral-200 px-2 drop-shadow-sm">
             A global movement for peace, unity, and joy powered by music.
           </h2>
 
-          <div className="text-base md:text-xl text-neutral-200 font-medium max-w-2xl mx-auto mb-10 text-center leading-relaxed">
-            <p>Wear or hold something white. Play the song.</p>
-            <p>Move freely and share your moment. That&apos;s it.</p>
+          <div className="text-base sm:text-lg md:text-xl text-neutral-200 font-medium max-w-full sm:max-w-2xl mx-auto mb-8 sm:mb-10 text-center leading-relaxed px-2">
+            <p className="inline sm:block">Wear or hold something white. Play the song. </p>
+            <p className="inline sm:block">Move freely and share your moment. That&apos;s it.</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4 mb-10 z-20 relative">
