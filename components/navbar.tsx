@@ -97,8 +97,13 @@ export default function Navbar() {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: '100%' }}
                         transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                        className="fixed inset-0 z-[60] bg-black/95 backdrop-blur-xl flex flex-col justify-center items-center md:hidden"
+                        className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-[60px] flex flex-col justify-center items-center md:hidden"
                     >
+                        {/* Liquid Glass Subtle Highlights */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/50 pointer-events-none"></div>
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-[80px] pointer-events-none"></div>
+                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-[80px] pointer-events-none"></div>
+
                         <button
                             onClick={() => setMobileMenuOpen(false)}
                             className="absolute top-6 right-6 text-white/50 hover:text-white"
@@ -106,7 +111,7 @@ export default function Navbar() {
                             <X className="w-8 h-8" />
                         </button>
 
-                        <div className="flex flex-col gap-8 text-center">
+                        <div className="flex flex-col gap-8 text-center relative z-10 w-full px-6">
                             {[
                                 { name: 'Home', href: '/' },
                                 { name: 'Leaderboard', href: '/leaderboard' },
@@ -116,23 +121,24 @@ export default function Navbar() {
                                     key={item.name}
                                     href={item.href}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="text-3xl font-display font-black uppercase text-primary hover:text-white transition-colors"
+                                    className="text-2xl sm:text-3xl font-bold uppercase tracking-widest text-white drop-shadow-md hover:text-primary transition-colors py-2"
                                 >
                                     {item.name}
                                 </Link>
                             ))}
-                            <div className="flex flex-col gap-4 w-full px-8 mt-8">
+
+                            <div className="flex flex-col gap-4 w-full mt-10">
                                 <Link
                                     href="/login"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="w-full border border-primary/20 text-primary py-3 rounded-full text-lg font-bold uppercase tracking-wide hover:border-white hover:text-white transition-colors"
+                                    className="w-full bg-white/10 backdrop-blur-md border border-white/20 text-white py-4 rounded-full text-lg font-bold uppercase tracking-widest tracking-wide hover:bg-white/20 hover:border-white/40 transition-all shadow-[0_8px_32px_rgba(0,0,0,0.1)]"
                                 >
                                     Login
                                 </Link>
                                 <Link
                                     href="/login?mode=signup"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className="w-full bg-[var(--color-button)] text-white py-3 rounded-full text-lg font-bold uppercase tracking-wide hover:scale-105 transition-transform"
+                                    className="w-full bg-white/90 backdrop-blur-md border border-white/30 text-black py-4 rounded-full text-lg font-bold uppercase tracking-widest tracking-wide hover:bg-white hover:scale-105 transition-all shadow-[0_8px_30px_rgb(255,255,255,0.12)]"
                                 >
                                     Sign Up
                                 </Link>
